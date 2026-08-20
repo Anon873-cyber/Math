@@ -13,9 +13,6 @@ class Set {
                 this.object.push(element)
             }
         }
-        //returning the object
-          return this.object
-
     }
 }
 
