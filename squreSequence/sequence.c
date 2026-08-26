@@ -4,7 +4,8 @@
 //  i mean i want to find a way to know the squre of a particual number without squring it
 //  by the using arithmatic progressive difference.
 
-// lets see how will it go !
+// generates squre series by using the 1 
+void squre_series_generator();
 int main()
 {
 
@@ -22,11 +23,20 @@ int main()
         // difference of squres are
         int difference = squre_of_first_number - squre_of_secoand_number;
         printf("difference between   %d and %d squres of  the numbers are %d \n",first_number,secoand_number,difference);
-
-        // result , see see that this is arithmatic series with a = 1 and d  is 2 
-        // and the difference is always be a the sum of first num and secoand num
-                
-
         first_number++;
+                 
     }
 }
+
+    // result , see see that this is arithmatic series with a = 1 and d  is 2 
+    // and the difference is always be a the sum of first num and secoand num
+    // which is  n^2 - (n-1)^2  = 2n + 1 
+    // n^2 = (2n+1) + (n-1)^2
+    // by using this equation we can generate sq series just we have to know sq of previous number
+    // creating the squre generating function 
+    void squre_series_generator(){
+     // generate the squre series by using that equation 
+    }
+
+
+
