@@ -51,10 +51,14 @@ void squre_series_generator()
     static int natural_number = 2;
 
     // implement the squre series formula
-    int squre_of_the_natural_number = (2 * natural_number - 1) + ((natural_number -1) * (natural_number - 1)); 
+    static int squre_of_the_previous_natural_number = 1; // place the squre of the previous number as n-1 sq to minimize the operation
+
+    int squre_of_the_natural_number = (2 * natural_number - 1) + squre_of_the_previous_natural_number; 
+
     // we can also place the squre of the previous number as n-1 sq to minimize the operation 
+    squre_of_the_previous_natural_number = squre_of_the_natural_number;
 
     // increasing the natural number by 1
     printf("the squre of %d series,%d \n", natural_number,squre_of_the_natural_number);
-    natural_number++;
+    natural_number++;   
 }
